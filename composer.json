@@ -1,0 +1,19 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Test\\":"test/",
+            "App\\": "src/"
+        }
+    },
+    "name": "slozano/kata-fizz-buzz",
+    "description": "kata fizz buzz",
+    "authors": [
+        {
+            "name": "sergiolobu",
+            "email": "slozanobueno@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
