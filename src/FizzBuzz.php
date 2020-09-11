@@ -6,12 +6,27 @@ class FizzBuzz
 {
     public function getResult($number)
     {
-        if($number % 3 == 0)
+        if($this->isDivisibleBy3($number))
         {
             return 'Fizz';
         }
 
+        if($this->isDivisibleBy5($number))
+        {
+            return 'Buzz';
+        }
+
         return $number;
+    }
+
+    protected function isDivisibleBy3($number)
+    {
+        return $number % 3 == 0;
+    }
+
+    protected function isDivisibleBy5($number)
+    {
+        return $number % 5 == 0;
     }
 }
 
