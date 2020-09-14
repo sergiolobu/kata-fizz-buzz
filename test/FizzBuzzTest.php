@@ -55,6 +55,20 @@ class FizzBuzzTest extends TestCase
         //Asserts
         $this->assertEquals('Buzz',$result);
     }
+
+    /**
+     * @test
+     */
+    public function return_fizzbuzz_when_print_number_divisible_by_3_and_5()
+    {
+        //Arrange
+
+        //Act
+        $result = $this->fizzBuzz->getResult(15);
+
+        //Asserts
+        $this->assertEquals('FizzBuzz',$result);
+    }
     
 }
 

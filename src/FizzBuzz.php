@@ -6,6 +6,11 @@ class FizzBuzz
 {
     public function getResult($number)
     {
+        if($this->isDivisibleBy3($number) && $this->isDivisibleBy5($number))
+        {
+            return 'FizzBuzz';
+        }
+
         if($this->isDivisibleBy3($number))
         {
             return 'Fizz';
