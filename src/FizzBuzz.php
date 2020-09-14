@@ -2,10 +2,17 @@
 
 namespace App;
 
+use App\exception\IsNotIntegerException;
+
 class FizzBuzz
 {
     public function getResult($number)
     {
+        if(!is_integer($number))
+        {
+            throw new IsNotIntegerException(); 
+        }
+
         if($this->isDivisibleBy3($number) && $this->isDivisibleBy5($number))
         {
             return 'FizzBuzz';

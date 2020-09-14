@@ -4,6 +4,7 @@ namespace Test;
 
 use PHPUnit\Framework\TestCase;
 use App\FizzBuzz;
+use App\exception\IsNotIntegerException;
 
 class FizzBuzzTest extends TestCase
 {
@@ -69,6 +70,21 @@ class FizzBuzzTest extends TestCase
         //Asserts
         $this->assertEquals('FizzBuzz',$result);
     }
+
+    /**
+     * @test
+     */
+     public function throw_exception_when_not_print_integer()
+     {
+        //Arrange
+
+        //Act
+        $this->expectException(IsNotIntegerException::class);
+
+        //Asserts
+        $result = $this->fizzBuzz->getResult('hola');
+
+     }
     
 }
 
