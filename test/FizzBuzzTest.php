@@ -17,7 +17,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function return_1_when_print_1()
+    public function return_1_when_print_number_1()
     {
         //Arrange
 
@@ -31,7 +31,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function return_fizz_when_print_number_divisible_by_3()
+    public function return_fizz_when_print_number_3()
     {
         //Arrange
 
@@ -45,7 +45,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function return_buzz_when_print_number_divisible_by_5()
+    public function return_buzz_when_print_number_5()
     {
         //Arrange
 
@@ -59,7 +59,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function return_fizzbuzz_when_print_number_divisible_by_3_and_5()
+    public function return_fizzbuzz_when_print_number_15()
     {
         //Arrange
 
